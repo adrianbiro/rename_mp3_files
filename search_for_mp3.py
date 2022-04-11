@@ -12,7 +12,7 @@ for root, dirs, files in os.walk(Path):
     for filename in fnmatch.filter(files, pattern):
         #dirs_with_mp3.append(os.path.join(root, filename))
         if (root not in dirs_with_mp3):
-            dirs_with_mp3.append(os.path.join(root))
+            dirs_with_mp3.append(root)
 """Print locations out."""
 for i in dirs_with_mp3:
     print(i)
