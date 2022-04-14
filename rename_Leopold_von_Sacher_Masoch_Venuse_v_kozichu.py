@@ -8,9 +8,9 @@ for i in os.listdir():
     file_name, file_extension = os.path.splitext(i)
     list_name = file_name.split()
     num = list_name[-1].zfill(2)
-    autor = "_".join(list_name[0:4])
+    author = "_".join(list_name[0:4])
     title = "_".join(list_name[4:-1])
-    new_name = f'{num}-{autor}:{title}.mp3'
+    new_name = f'{num}-{author}:{title}.mp3'
     print(new_name)
 
     os.rename(i, new_name)
